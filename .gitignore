@@ -10,6 +10,7 @@ __pycache__/
 .vscode/
 
 # Distribution / packaging
+arc_utils.egg-info/
 .Python
 build/
 develop-eggs/

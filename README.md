@@ -69,3 +69,23 @@ from arc_utils.date import DateUtils
 dt = DateUtils()
 dt.elapsed_from(dt.elapsed_time())
 ```
+
+## 3. Logger
+
+Logger is a python class that allows you to create formated logs and enables log rotation.
+
+### APIs
+
+- #### getLogger()
+gets logger object for logging
+
+Example:
+
+```python        
+from arc_utils.logger import Logger
+
+logger = Logger("log-file-path.log").getLogger()
+logger.info("msg")
+logger.warn("msg")
+logger.error("msg")
+````

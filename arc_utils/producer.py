@@ -37,6 +37,6 @@ class KafkaLogProducer:
 
         assert index != ""
 
-        data = {"index": index, "doc": json.dumps(doc), "doc_type": doc_type}
-        self.__producer.send(self.topic, data)
+        # data = {"index": index, "doc": json.dumps(doc), "doc_type": doc_type}
+        self.__producer.send(self.topic, doc)
         self.__producer.flush()

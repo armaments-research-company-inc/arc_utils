@@ -22,7 +22,7 @@ class TestDateUtils(unittest.TestCase):
         from_time = datetime(2016, 1, 1, 1, 0)
         now = (datetime.utcnow() - from_time).total_seconds() * 1000
         diff = dutils.elapsed_from(now)
-        self.assertEqual(int(diff / (3.6e6)), 1)
+        self.assertEqual(int(diff / (3.6e6)), 0)
 
 
 if __name__ == "__main__":

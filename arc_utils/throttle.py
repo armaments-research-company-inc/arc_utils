@@ -12,7 +12,7 @@ class CoolDownDecorator(object):
         self.func = func
         self.interval = interval
         self.last_run_for_user = {}
-        self.user_id_key = "id"
+        self.user_id_key = "user_id"
 
     def __get__(self, obj, objtype=None):
         if obj is None:

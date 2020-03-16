@@ -13,7 +13,7 @@ from kafka import KafkaProducer
 class KafkaLogProducer:
     def __init__(self, brokers):
 
-        self.topic = "niobrara-70979.elastic-log"
+        self.topic = "arc-rte-elastic-log"
         self.__producer = KafkaProducer(
             api_version=(2, 2, 1),
             bootstrap_servers=self.get_kafka_brokers(brokers),

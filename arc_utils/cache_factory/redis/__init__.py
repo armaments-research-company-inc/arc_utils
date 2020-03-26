@@ -3,7 +3,7 @@
 import time
 import redis
 
-from arc_utils.cache import cache
+from arc_utils.cache_factory import cache
 
 
 class Redis(cache.Cache):

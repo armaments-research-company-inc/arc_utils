@@ -48,9 +48,8 @@ class CoolDownNotificationDecorator(object):
         return partial(self, obj)
 
     def __call__(self, *args, **kwargs):
-
         now = time.time()
-        user_id = args[0][self.user_name]
+        user_id = args[1][self.user_name]
 
         if user_id not in self.last_run_for_user:
             self.last_run_for_user[user_id] = now

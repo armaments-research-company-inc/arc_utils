@@ -8,7 +8,7 @@ except ImportError:
 
 from kafka import KafkaProducer
 from kafka import KafkaProducer
-from schema import Schema
+from schema import Schema, Optional
 
 
 
@@ -17,7 +17,9 @@ login_schema = Schema({
                 "payload":
                 {
                     "user_email": str,
-                    "app_name": str
+                    "app_name": str,
+                    "time": str,
+                    Optional("environment"): str
                 }
                 })
 class Notification:

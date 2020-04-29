@@ -2,7 +2,7 @@ import setuptools
 from setuptools import find_packages
 setuptools.setup(
     name="arc_utils",
-    version="0.3.3",
+    version="0.3.5",
     url='https://github.com/armaments-research-company-inc/arc_utils',
     author="Minhaj Uddin Khan",
     author_email="minhajuddin.khan@tenpearls.com",

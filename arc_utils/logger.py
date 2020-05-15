@@ -12,7 +12,8 @@ class Logger():
                                         interval=interval, #rotate file after every hour
                                         backupCount=backupCount)  #overwrite first file after 48 hours (interval * 48)
         self.handler.setFormatter(self.formatter)
-        self.logger.addHandler(self.handler)
+        if not self.logger.handlers:
+            self.logger.addHandler(self.handler)
 
     def getLogger(self):
         return self.logger
